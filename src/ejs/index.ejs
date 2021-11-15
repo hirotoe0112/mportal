@@ -2,16 +2,102 @@
     title : 'TOP'
 }); %>
 <div id="main">
-    <div id="mainImage">
-        <div id="imageArea"></div>
-        <div id="wordArea">
-            <div id="titleWord">
+    <section id="mainImage">
+        <div id="mainImageArea"></div>
+        <div id="mainTextArea">
+            <div id="titleText">
                 Mikasuzu Portal Website
             </div>
-            <div id="subWord">
+            <div id="subText">
                 All contents are original. Powered by Suzuka Mikami.
             </div>
         </div>
-    </div>
+    </section>
+    <section id="mainActivities">
+        <h2>
+            Main Activities
+        </h2>
+        <div id="mainActivitiesMenu" class="content">
+            <div class="flexContainer">
+                <div class="flexItem">
+                    <a href="">
+                        <div class="menuImage"></div>
+                        <div class="menuText">Music</div>
+                    </a>
+                </div>
+                <div class="flexItem">
+                    <a href="">
+                        <div class="menuImage"></div>
+                        <div class="menuText">Programming</div>
+                    </a>
+                </div>
+                <div class="flexItem">
+                    <a href="">
+                        <div class="menuImage"></div>
+                        <div class="menuText">Writing</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="subActivities">
+        <h2>
+            Sub Activities
+        </h2>
+        <div id="subActivitiesMenu" class="content">
+            <ul>
+                <li>
+                    <a href="">読書メーター</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="profile">
+        <h2>
+            About Suzuka Mikami
+        </h2>
+        <div id="profileArea" class="content">
+            <div id="profileImageArea"></div>
+            <div id="profileTextArea">
+                創り手でありたい人。老後は孫ではなく自分の創作物に囲まれて過ごしたい。
+                <article>
+                    <h3>
+                        音楽歴
+                    </h3>
+                    <p>
+                        2011年頃にフリーゲームに熱中し、ゲーム音楽を作りたいと思い、DominoやMusicStudioProducerを触り始める。
+                        MIDIキーボードを購入し、バンドルされていたSONARを使用しDAWの多機能ぶりに感動する。
+                        SONAR開発終了後はFL Studioに移行し、現在も愛用している。
+                        シンセを多用したノスタルジックな音楽や合唱曲風の音楽をよく作る。
+                        同人イベント「M3」で自作CDを頒布している。
+                    </p>
+                </article>
+                <article>
+                    <h3>
+                        プログラミング歴
+                    </h3>
+                    <p>
+                        小学校高学年でPCを触り始め、オリジナル小説を掲載したHPを作っては放置、作っては放置するのを繰り返していた。
+                        大学は情報系の学部ではなかったが、戯れに受験した初級システムアドミニストレータになぜか合格する。
+                        主に.NET系（C#/VB）でのWebアプリケーションやフォームアプリケーション、Node.js、静的HPの作成などを専門としている。
+                        Unityでゲーム開発をすることもあり、GooglePlayにアプリをリリースしている。
+                    </p>
+                </article>
+                <article>
+                    <h3>
+                        執筆歴
+                    </h3>
+                    <p>
+                        物心ついた頃にはオリジナル小説をノートに書き散らしていた。
+                        学校でも皆が外で遊ぶ中、一人で教室にこもってひたすら小説を書きまくっていた。
+                        同人イベント「Text-Revolutions」「コミティア」などでオリジナル同人誌を頒布していた。
+                        オリジナルオンリーで二次創作は一切やらない。
+                        ファンタジーや不思議系日常ものが好きでよく書く。
+                        最近は構想を練ってはいるもののあまり書けてはいない。
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
 </div>
 <%- include('common/_footer'); %>
