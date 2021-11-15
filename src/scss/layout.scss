@@ -1,0 +1,44 @@
+/*配色設定*/
+$base-color:#cccccc;
+$base-color2:#696969;
+$main-color:red;
+$sub-color:blue;
+$accent-color:green;
+
+/*背景色*/
+section{
+    &#mainActivities{
+        background-color: $base-color;
+    }
+    &#subActivities{
+        background-color: $base-color2;
+    }
+    &#profile{
+        background-color: $base-color;
+    }
+}
+
+/*メインイメージ*/
+section{
+    &#mainImage{
+        width: 100vw;
+        height: 100vh;
+        background-color: $base-color2;/*仮*/
+        position: relative;
+    }
+    #mainImageArea{
+        width: 100vw;
+        height: 100vh;
+        position:absolute;
+        top:0;
+        left: 0;
+        background-color:lightpink;/*仮*/
+    }
+    #mainTextArea{
+        position:absolute;
+        top:50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        background-color: lightskyblue;/*仮*/
+    }
+}
