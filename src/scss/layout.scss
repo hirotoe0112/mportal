@@ -1,32 +1,57 @@
 /*配色設定*/
-$base-color:#cccccc;
-$base-color2:#696969;
-$main-color:red;
-$sub-color:blue;
-$accent-color:green;
+$base-color:#CAE4DB;
+$base-color2:#F5F4F4;
+$main-color:#CDAC81;
+$accent-color:#00303F;
 
-/*背景色*/
+/*配色*/
 section{
     &#mainActivities{
         background-color: $base-color;
+        h2{
+            color: $accent-color;
+        }
+        .flexItem{
+            background-color: $accent-color;
+            color: $main-color;
+            a{
+                color: $main-color;
+            }
+            a:hover{
+                color: $base-color;
+            }
+        }
     }
     &#subActivities{
         background-color: $base-color2;
+        h2{
+            color: $accent-color;
+        }
+        a{
+            color: $accent-color;
+        }
+        a:hover{
+            color: $base-color;
+        }
     }
     &#profile{
-        background-color: $base-color;
+        background-color: $accent-color;
+        color: $main-color;
     }
 }
+
+/*セクションごとの*/
 
 /*セクションレイアウト*/
 section{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /*見出し*/
 h2{
     text-align: center;
+    font-size: 2rem;
 }
 
 /*メインイメージ*/
@@ -52,5 +77,21 @@ section{
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
         background-color: lightskyblue;/*仮*/
+    }
+}
+
+/*メイン活動*/
+section{
+    &#mainActivities{
+        /*flexbox*/
+        .flexContainer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .flexItem{
+            width: 300px;
+            padding:5px 20px 20px 20px;
+        }
     }
 }
