@@ -12,13 +12,11 @@ section{
             color: $accent-color;
         }
         .flexItem{
-            background-color: $accent-color;
-            color: $main-color;
             a{
-                color: $main-color;
+                color: $accent-color;
             }
             a:hover{
-                color: $base-color;
+                color: $main-color;
             }
         }
     }
@@ -27,11 +25,13 @@ section{
         h2{
             color: $accent-color;
         }
-        a{
-            color: $accent-color;
-        }
-        a:hover{
-            color: $base-color;
+        .flexItem{
+            a{
+                color: $accent-color;
+            }
+            a:hover{
+                color: $main-color;
+            }
         }
     }
     &#profile{
@@ -82,16 +82,29 @@ section{
 
 /*メイン活動*/
 section{
-    &#mainActivities{
+    &#mainActivities, &#subActivities{
+        .contentContainer{
+            width: 90%;
+            margin: 0 auto;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.5), 1px 1px 5px rgba(0, 0, 0, 0.3) inset;
+            h3{
+                padding:5px 0 5px 5px;
+                background-color: $accent-color;
+                color: $base-color;
+                font-size: 1.3em;
+            }
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
         /*flexbox*/
         .flexContainer{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            padding: 10px;
         }
         .flexItem{
-            width: 300px;
-            padding:5px 20px 20px 20px;
+            margin-left: 10px;
+            margin-right: 20px;
         }
     }
 }
