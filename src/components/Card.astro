@@ -1,0 +1,38 @@
+---
+const { title, description, link } = Astro.props;
+---
+
+<div class="card">
+  <div class="link-title">
+    <a href={link} target="_blank">{title}</a>
+  </div>
+  <hr />
+  <div class="link-description">{description}</div>
+</div>
+
+<style>
+  div.card {
+    margin: 30px auto;
+    width: 80%;
+    padding: 30px 30px;
+    text-align: center;
+  }
+
+  div.card a {
+    text-decoration: none;
+    color: var(--color-text);
+  }
+
+  div.card hr {
+    color: var(--color-callout);
+    margin-top: 30px;
+    margin-bottom: 5px;
+    border-top: 1px dotted var(--color-callout);
+  }
+
+  div.link-description {
+    font-size: var(--font-size-sm);
+    color: var(--color-callout);
+    text-align: right;
+  }
+</style>

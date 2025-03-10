@@ -1,20 +1,14 @@
 {
   "name": "mportal",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ejs": "ejs-cli -b src/ejs/ -f \"!(_)*.ejs\" -o ./dist && sass src/scss/layout.scss dist/css/layout.css"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "ejs-cli": "^2.2.2"
+    "dev": "astro dev --host",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "destyle.css": "^3.0.0",
-    "sass": "^1.43.4"
+    "astro": "^5.4.2"
   }
 }

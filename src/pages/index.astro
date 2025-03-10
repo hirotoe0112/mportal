@@ -1,0 +1,124 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+  <div class="container">
+    <div class="left-panel">
+			<div id="site-info">
+				<div id="site-title">Mikasuzu Portal</div>
+				<div id="site-description">All contents are original. Powered by Suzuka Mikami.</div>
+			</div>
+    </div>
+    <div class="right-panel">
+      <div class="content">
+				<Card title="SoundCloud" description="素材除く全オリジナル曲掲載" link="https://soundcloud.com/kagishiro" />
+				<Card title="三上涼風オリジナル曲" description="YouTube Video" link="https://www.youtube.com/channel/UCLJiUc46fF-oTWOJpj16UqQ" />
+				<Card title="mikamusic" description="フリー音楽素材サイト" link="https://mikamusic.net" />
+				<Card title="Audiostock" description="有料音楽素材" link="https://audiostock.jp/artists/56028" />
+				<Card title="niconico" description="初代アカウント" link="https://www.nicovideo.jp/mylist/54257032" />
+				<Card title="niconico" description="二代目アカウント" link="https://www.nicovideo.jp/mylist/60664603" />
+				<Card title="niconico" description="三代目アカウント" link="https://www.nicovideo.jp/mylist/65431325" />
+				<Card title="ピアノ練習記録帳" description="ピアノに関するブログ" link="https://suzupiano.net/" />
+				<Card title="ピアノ練習記録帳vlog" description="YouTube Video" link="https://www.youtube.com/channel/UC_5Kmd3UfsyHsDkPbo4d_Hw" />
+				<Card title="すずろぐ" description="技術ブログ" link="https://suzukaprogrammer.com/" />
+				<Card title="GitHub" description="ソースコードリポジトリ" link="https://github.com/hirotoe0112" />
+				<Card title="旅人たちの紡歌" description="オリジナル小説サイト" link="https://novel.greenry.jp/" />
+				<Card title="Diary" description="ただの日記" link="https://diary.greenry.jp/" />
+				<Card title="note" description="散文" link="https://note.com/hirotoe0112" />
+				<Card title="English Hello World" description="英語ブログ" link="https://english-helloworld.net/" />
+				<Card title="Russian Hello World" description="ロシア語学習ブログ" link="https://temp-russian.greenry.jp/" />
+				<Card title="読書メーター" description="和書・洋書全ての読書記録" link="https://bookmeter.com/users/727224" />
+				<Card title="goodreads" description="洋書のみの読書記録" link="https://www.goodreads.com/user/show/169300832-suzuka-mikami" />
+				<div id="copyright">© 2021 - Mikasuzu Portal by Suzuka Mikami</div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .left-panel {
+    width: 50%;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    border-right: 1px dotted var(--color-callout);
+  }
+
+	div#site-info {
+		text-align: center;
+	}
+
+  div#site-title {
+    font-size: var(--font-size-xl);
+    font-family: "Megrim", system-ui;
+    border-bottom: 1px solid var(--color-callout);
+    padding: 0 20px;
+		margin-bottom: 5px;
+  }
+
+	div#site-description {
+		font-size: var(--font-size-sm);
+		font-family: "Quicksand", serif;
+		color: var(--color-callout);
+	}
+
+  .right-panel {
+    width: 50%;
+    overflow-y: auto;
+    background-color: var(--color-bg);
+    padding: 20px;
+    font-family: "IBM Plex Sans JP", serif;
+  }
+
+	div#copyright {
+		font-size: var(--font-size-sm);
+		color: var(--color-callout);
+		text-align: center;
+		margin-top: 50px;
+	}
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .left-panel {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      padding: 20px;
+      text-align: center;
+			border-right: none;
+			border-bottom: 1px dotted var(--color-callout);
+    }
+
+    .right-panel {
+      width: 100%;
+      height: auto;
+      overflow-y: visible;
+    }
+  }
+</style>
